@@ -1,1 +1,172 @@
-/* You can add global styles to this file, and also import other style files */
+@use "./assets/styles/variables.scss" as *;
+@use "./assets/styles/mixinutility.scss" as *;
+@use "./assets/styles/mixinbutton.scss" as *;
+@use "./assets/styles/mixinutility.scss" as *;
+  
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  font-family: "Poppins", Helvetica, Arial, Lucida, sans-serif;
+  font-size: 18px;
+  line-height: 1.7em;
+  color: $black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: $black;
+}
+a:hover {
+  color: $black;
+}
+
+footer {
+  font-size: 16px;
+}
+footer .topSec .contactDetails .condtlItemicon {
+  font-size: 20px;
+}
+footer .topSec .contactDetails .condtlItemtext p {
+  margin: 0;
+}
+footer .topSec .contactForm {
+  position: relative;
+}
+footer .topSec .contactForm .input {
+  border: none;
+  color: $black;
+  padding: 14px 71px 14px 0;
+  background: none;
+  border-bottom: 2px solid $paleGray;
+  font-size: 14px;
+  width: 100%;
+}
+footer .topSec .contactForm .btnSec {
+  position: absolute;
+  top: 4px;
+  right: 0;
+  z-index: 3;
+}
+footer .topSec .contactForm .btnSec .contact_submit {
+  font-size: 14px;
+  background-color: $fieryRed;
+  color: $white;
+  border: 1px solid $fieryRed;
+  padding: 8px 14px;
+  transition: 0.25s all ease-in;
+}
+footer .topSec .contactForm .btnSec .contact_submit:hover {
+  color: $fieryRed;
+  background-color: transparent;
+}
+footer .divider {
+  padding: 11px 0;
+}
+footer .divider .dividerin {
+  height: 1px;
+  background-color: $black;
+}
+footer .btmSec p {
+  margin: 0;
+}
+footer .btmSec p a {
+  color: $black;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.scroll_top {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  position: fixed;
+  z-index: 99999;
+  bottom: 125px;
+  right: 0px;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  display: inline;
+  cursor: pointer;
+  font-size: 30px;
+  padding: 5px;
+  color: $white;
+  opacity: 0;
+  animation: fadeInRight 1s 1 cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.scroll_top.show {
+  opacity: 1;
+  animation: fadeInRight 1s 1 cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+header .container {
+  position: relative;
+}
+header .headerLogo {
+  max-width: 250px;
+}
+@media (max-width: 767px) {
+  header .headerLogo {
+    max-width: 180px;
+  }
+}
+header .headerLogo img {
+  max-width: 100%;
+  // check this css and fix it
+  height: 16vh !important;
+  vertical-align: middle;
+  height: auto;
+}
+header .headerMenu {
+  width: calc(100% - 250px);
+}
+@media (max-width: 767px) {
+  header .headerMenu {
+    width: calc(100% - 180px);
+  }
+}
+
+@media (min-width: 992px) {
+  .desktopHide {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  .mobileHide {
+    display: none;
+  }
+}
+a {
+  text-decoration: none;
+  text-decoration: none;
+  display: inline-block;
+  color: $black !important;
+}
+a:hover {
+  color: $black;
+}/*# sourceMappingURL=styles.css.map */
+
+
+// override navbar styles and please remove unused styles from all styles
+.navbar-light .navbar-nav .nav-link{
+color:black !important 
+}
+
+.container{
+  margin-top: 7.5rem !important;
+}

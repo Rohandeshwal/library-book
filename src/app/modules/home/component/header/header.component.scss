@@ -1,0 +1,78 @@
+@use "../../../../../assets/styles/variables.scss" as *;
+.reg-link{
+  color:black;
+  text-decoration: none !important;
+  font-weight: bold;
+  cursor: pointer;
+}
+.reg-link a{
+  text-decoration: none;
+  outline: none;
+}
+.social{
+  height: 22px;
+
+}
+.header {
+
+  position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+   box-shadow: red;
+  
+   background: $white;
+   outline: none;
+   height: 120px;
+   
+}
+
+
+.carousel-inner img {
+width: 50% !important;
+height: 300px !important;
+}
+.nav-link{
+  cursor: pointer;
+ 
+  &:focus{
+    outline: none !important;
+  }
+}
+
+
+@media (min-width:1280px){
+  .header{
+    // height: 100px;
+    // padding:12px
+  }
+}
+
+.social1{
+  height: 16px;
+  width: 27px;
+}
+
+.navbar-nav .dropdown-menu{
+  width: 308px;
+}
+
+
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    position: fixed;
+    top: 56px; /* height of navbar */
+    right: 0;
+    width: 75%;
+    height: 100%;
+
+    z-index: 1000;
+    padding: 1rem;
+  }
+.navbar-toggler{
+  margin-left: 120px;
+}
+
+}
