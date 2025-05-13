@@ -124,11 +124,18 @@ header .headerLogo {
   header .headerLogo {
     max-width: 180px;
   }
+  header .headerLogo img {
+  max-width: 100%;
+  // check this css and fix it
+ 
+  vertical-align: middle;
+  height: auto;
+}
 }
 header .headerLogo img {
   max-width: 100%;
   // check this css and fix it
-  height: 16vh !important;
+  height: 16vh;
   vertical-align: middle;
   height: auto;
 }
